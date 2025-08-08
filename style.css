@@ -17,15 +17,59 @@
     background-size: cover;
     height:100%;
     position: relative;
+    display:flex;
+    flex-direction:column;
 }
 .logo-background{
     height:20vh;
-    background-color: grey;
-    opacity:0.3;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity:1;
     position:relative;
     top:40vh;
 }
 .vertical-right{
     display:flex;
     width:60%;
+}
+
+.logo-image{
+    width:5em;
+    position:relative;
+    top:20px;
+    left:50px;
+  
+}
+.logo-text{
+    font-family:'Norse';
+    font-size: 2.5em;
+    position:relative;
+    left:60px;
+   
+}
+
+.photo-credit{
+    color:black;
+    font-size:10px;
+    text-align:center;
+    position:relative;
+    top:80vh;
+}
+
+a{
+    color: black;
+}
+
+.top-right{
+    background-color: grey;
+    height:32%;
+}
+
+.mid-right{
+    background-color: ;
+    height:36%;
+}
+
+.bottom-right{
+    background-color: grey;
+    height:32%;
 }
