@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container{
+    display:flex;
+    justify-content: stretch;
+    height:110vh;
+}
+.vertical-left{
+    width:30%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    height:100%;
+    position: relative;
+}
+.logo-background{
+    height:20vh;
+    background-color: grey;
+    opacity:0.3;
+    position:relative;
+    top:40vh;
+}
+.vertical-right{
+    display:flex;
+    width:60%;
+}
