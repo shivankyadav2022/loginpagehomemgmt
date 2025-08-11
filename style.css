@@ -1,3 +1,6 @@
+:root{
+    --leftalignspace:60px;
+}
 @font-face {
     font-family: 'Norse';
     src: url('fonts/Norse-Bold.woff2') format('woff2');
@@ -5,7 +8,10 @@
     font-style: normal;
     font-display: swap;
 }
-
+body{
+    background-color: black;
+   
+}
 .container{
     display:flex;
     justify-content: stretch;
@@ -25,11 +31,15 @@
     background-color: rgba(0, 0, 0, 0.5);
     opacity:1;
     position:relative;
-    top:40vh;
+    top:16vh;
 }
 .vertical-right{
     display:flex;
     width:60%;
+    height:100%;
+    flex-direction: column;
+  
+   
 }
 
 .logo-image{
@@ -43,7 +53,7 @@
     font-family:'Norse';
     font-size: 2.5em;
     position:relative;
-    left:60px;
+    left:var(--leftalignspace);
    
 }
 
@@ -60,16 +70,95 @@ a{
 }
 
 .top-right{
-    background-color: grey;
-    height:32%;
+    background-color: rgb(238, 238, 238);
+    height:33.2%;
+    box-shadow: 0 -10px 20px -10px rgb(180, 180, 180)  inset;
 }
 
 .mid-right{
-    background-color: ;
     height:36%;
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .bottom-right{
-    background-color: grey;
+    background-color: rgb(238, 238, 238);
     height:32%;
+    box-shadow: 0 10px 20px -10px rgb(180, 180, 180)  inset
+}
+
+.top-right p,.mid-right span{
+    font-size: large;
+    font-weight: 900;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.top-right p{
+    position:relative;
+    top:40px;
+    left:var(--leftalignspace);
+}
+
+form{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    position:relative;
+    left:var(--leftalignspace);
+   
+}
+
+p{
+    margin-bottom: 2px;
+    font-size: 0.8em;
+    
+  
+}
+
+input{
+    appearance: none;
+    margin : 0px;
+    border-radius: 5px;
+    font-size:1.2em;
+    font-weight:100;
+}
+
+form>div{
+    display:flex;
+    justify-content:space-between;
+    width:60%;
+}
+
+.mid-right span{
+    position: relative;
+    left:var(--leftalignspace);
+}
+
+.bottom-right div{
+    position: relative;
+    left:var(--leftalignspace);
+    margin-bottom:10px;
+    margin-top:20px;
+    box-sizing: border-box;
+}
+
+.submitButton{
+    background-color: rgb(2, 49, 9);
+    color:white;
+    border-radius: 5px;
+    width: 20%;
+    height: 20%;
+    font-weight: 900;
+}
+
+.bottom-right a{
+    text-decoration:none;
+    color:rgb(2, 49, 9) ;
+    font-weight:900;
 }
