@@ -8,17 +8,21 @@
     font-style: normal;
     font-display: swap;
 }
-body{
-    background-color: black;
-   
+body {
+  background-color: black; 
+  display:flex;
+  justify-content: center;
+  height:100vh;
+  margin:0;
 }
 .container{
     display:flex;
     justify-content: stretch;
     height:110vh;
+    width:80%;
 }
 .vertical-left{
-    width:30%;
+    width:40%;
     background-image: url('images/background.jpg');
     background-size: cover;
     height:100%;
