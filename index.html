@@ -28,11 +28,11 @@
                     <div>
                        <div>
                            <p><label for="firstName">FIRST NAME</label></p>
-                            <input type="text" id="firstName" name="userfirstname">
+                            <input type="text" id="firstName" name="userfirstname" required>
                                                </div>
                                                <div>
                             <p><label for="lastName">LAST NAME</label></p>
-                            <input type="text" id="lastName" name="userlastname">
+                            <input type="text" id="lastName" name="userlastname" required>
                        </div>
                     </div>
                     <div>
@@ -42,7 +42,7 @@
                         </div>
                         <div>
                             <p><label for="userContact">PHONE NUMBER</label></p>
-                            <input type="number" id="userContact" name="userContact">
+                            <input type="number" id="userContact" name="userContact" minlength="10" maxlength="10" pattern="^[6-9]\d{9}$">
                         </div>
                     </div>
                     <div>

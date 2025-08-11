@@ -170,3 +170,13 @@ form>div{
     font-weight:900;
 }
 
+#firstName:invalid,#lastName:invalid{
+    border:1px solid red;
+}
+input[type="email"]:invalid{
+    border:1px solid red;
+}
+
+input[type="number"]:invalid{
+    border: 1px solid red;
+}
