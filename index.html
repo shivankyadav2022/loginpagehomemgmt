@@ -42,17 +42,17 @@
                         </div>
                         <div>
                             <p><label for="userContact">PHONE NUMBER</label></p>
-                            <input type="number" id="userContact" name="userContact" minlength="10" maxlength="10" pattern="^[6-9]\d{9}$">
+                            <input type="tel" id="userContact" name="userContact" minlength="10" maxlength="10" pattern="^[6-9]\d{9}$">
                         </div>
                     </div>
                     <div>
                         <div>
                             <p><label for="userPassword">PASSWORD</label></p>
-                            <input type="password" id="userPassword" name="userPassword">
+                            <input type="password" id="userPassword" name="userPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$">
                         </div>
                         <div>
                             <p><label for="userPasswordRepeat">CONFIRM PASSWORD</label></p>
-                            <input type="password" id="userPasswordRepeat" name="userPasswordRepeat">
+                            <input type="password" id="userPasswordRepeat" name="userPasswordRepeat" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$">
                         </div>
                     </div>
                 </form>
