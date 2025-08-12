@@ -169,7 +169,9 @@ form>div{
     color:rgb(2, 49, 9) ;
     font-weight:900;
 }
-
-input:invalid{
+input[type="text"]:invalid:not(:placeholder-shown){
+    border: 1px solid red;
+}
+input:invalid:not(input[type="text"]){
     border: 1px solid red;
 }
